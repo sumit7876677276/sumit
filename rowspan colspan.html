@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://127.0.0.1:5500/colspanandrowspantable.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.colspan and rowspan.com</title>
+</head>
+<body>
+    <center><h1>SCHOOL TIME TABLE</h1></center><table border="6" align="center">
+    
+<tbody><tr>
+<th bgcolor="orange">Period</th>
+<th bgcolor="purple">Time</th>
+<th bgcolor="yellow">Monday</th>
+<th bgcolor="pink">Tuesday</th>
+<th bgcolor="red">Wednesday</th>
+<th bgcolor="green">Thursday</th>
+<th bgcolor="orange">Friday</th>
+<th bgcolor="skyblue">Saturday</th>
+</tr>
+
+<tr>
+<td bgcolor="skyblue">1st</td>
+<td bgcolor="red">10:00-11:00</td>
+<td bgcolor="orange">Chemistry</td>
+<td bgcolor="green">Physics</td>
+<td bgcolor="purple">Math</td>
+<td bgcolor="yellow">computer</td>
+<td bgcolor="red">English</td>
+<td rowspan="3" bgcolor="orange">PROJECT</td></tr>
+
+
+
+<tr>
+    <td bgcolor="skyblue">1st</td>
+    <td bgcolor="red">10:00-11:00</td>
+    <td bgcolor="orange">Chemistry</td>
+    <td bgcolor="green">Physics</td>
+    <td bgcolor="purple">Math</td>
+    <td bgcolor="yellow">computer</td>
+    <td bgcolor="red">English</td>
+    </tr>
+    
+    
+
+
+
+    <tr>
+        <td bgcolor="skyblue">1st</td>
+        <td bgcolor="red">10:00-11:00</td>
+        <td bgcolor="orange">Chemistry</td>
+        <td bgcolor="green">Physics</td>
+        <td bgcolor="purple">Math</td>
+        <td bgcolor="yellow">computer</td>
+        <td bgcolor="red">English</td>
+        </tr>
+        
+        
+    
+<tr><td colspan="8">LUNCH BREAK:-</td></tr>    
+<tr>
+    <td bgcolor="skyblue">1st</td>
+    <td bgcolor="red">10:00-11:00</td>
+    <td bgcolor="orange">Chemistry</td>
+    <td bgcolor="green">Physics</td>
+    <td bgcolor="purple">Math</td>
+    <td bgcolor="yellow">computer</td>
+    <td bgcolor="red">English</td>
+    <td rowspan="2" bgcolor="orange">PROJECT</td></tr>
+
+    <tr>
+        <td bgcolor="skyblue">1st</td>
+        <td bgcolor="red">10:00-11:00</td>
+        <td bgcolor="orange">Chemistry</td>
+        <td bgcolor="green">Physics</td>
+        <td bgcolor="purple">Math</td>
+        <td bgcolor="yellow">computer</td>
+        <td bgcolor="red">English</td></tr>
+    
+
+</tbody></table>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
